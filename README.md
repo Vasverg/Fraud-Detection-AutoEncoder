@@ -69,15 +69,16 @@ The preprocessing pipeline performs the following steps:
 - Converts the NumPy arrays into PyTorch tensors.
 - Loads the training data in batches of 256 transactions.
 
-## Training
+## Training Configuration
+ 
+| Parameter        | Value              |
+|-------------------|--------------------|
+| Batch size        | 256                 |
+| Epochs             | 15                |
+| Optimizer          | Adam               |
+| Learning rate      | 0.001              |
+| Loss function      | MeanSquaredError   |
 
-The model is trained with:
-
-- Loss function: Mean Squared Error (`MSELoss`)
-- Optimizer: Adam
-- Learning rate: `0.001`
-- Epochs: `15`
-- Batch size: `256`
 
 The script automatically uses CUDA when a compatible GPU is available. Otherwise, it runs on the CPU.
 
