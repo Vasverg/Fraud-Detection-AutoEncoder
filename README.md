@@ -121,9 +121,7 @@ Make sure the project directory contains the dataset:
 ```text
 creditcard-fraud-autoencoder/
 ├── fraud_AE.py
-├── creditcard.csv
-├── fraud_detection_plot.png
-└── README.md
+└──  creditcard.csv
 ```
 
 
