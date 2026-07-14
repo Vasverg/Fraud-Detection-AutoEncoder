@@ -126,11 +126,6 @@ creditcard-fraud-autoencoder/
 └── README.md
 ```
 
-Run the program:
-
-```bash
-python fraud_AE.py
-```
 
 During execution, the script will:
 
@@ -155,7 +150,33 @@ During execution, the script will:
 ```bash
 pip install pandas numpy torch matplotlib scikit-learn
 ```
+## Average Loss per Epoch
 
+```
+Epoch [1/15] Loss: 0.80351
+Epoch [2/15] Loss: 0.58938
+Epoch [3/15] Loss: 0.52728
+Epoch [4/15] Loss: 0.49974
+Epoch [5/15] Loss: 0.48127
+Epoch [6/15] Loss: 0.46702
+Epoch [7/15] Loss: 0.45850
+Epoch [8/15] Loss: 0.45240
+Epoch [9/15] Loss: 0.44682
+Epoch [10/15] Loss: 0.44223
+Epoch [11/15] Loss: 0.43712
+Epoch [12/15] Loss: 0.43370
+Epoch [13/15] Loss: 0.42874
+Epoch [14/15] Loss: 0.42686
+Epoch [15/15] Loss: 0.42485
+```
+
+## Results
+| Metric     | Score |
+|------------|-------|
+| Precision  |     0.5776  |
+| Recall     |   0.8089    |
+
+> **Note:** Due to the nature of this architecture and the dataset and the way the fraud detection is handled you have to sacrifice some precision to improve the recall and vice versa.
 
 ## Important Note
 
